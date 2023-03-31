@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EDS Archives</title>
+</head>
+
+<style>
+
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+} 
+
+</style>
+
+<body>
+<h2>Welcome to the EDS Archives</h2>
+<pre>
+<h3>Disclaimer</h3>
+All data hosted on this archive is done purely as a method of providing access to data which may no longer be available online.
+This archive does not provide you with any license of any kind, does not release you from any obligation to abide by terms of use of data
+as laid out by the respective creators and or vendors
+
+If you own the copyright to any of the data on this archive and you would like to request it be removed from the archive, you can do so <a href="https://forms.zohopublic.com/ekrondigitalsolutionsptyltd/form/PrioritizeBugReport/formperma/6CqljQCvEmLS-4BmBNnFpR6ZM2_hZ42LXbPdChLJnw4" target="_blank">here</a>
+
+</pre>
+
+You can view the entire key XML for the S3 bucket here: https://edsarchives.s3.eu-west-1.wasabisys.com/
+<br>
+<br>
+
+<button type="button" class="collapsible">Software Packages</button>
+<div class="content">
+  <ul>
+    <li><a href="https://edsarchives.s3.eu-west-1.wasabisys.com/Software Packages/SyncToySetupPackage_v21_x64.exe" target="_blank">SyncToySetupPackage_v21_x64.exe</a></li>
+  </ul>
+</div> 
+
+<button type="button" class="collapsible">ISO Files</button>
+<div class="content">
+  <ul>
+    <li><a href="https://edsarchives.s3.eu-west-1.wasabisys.com/ISO/Argox Label Printer Drivers.iso" target="_blank">Argox Label Printer Drivers.iso</a></li>
+  </ul>
+</div> 
+
+
+</body>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+} 
+
+</script>
+
+</html>
